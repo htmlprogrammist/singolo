@@ -3,327 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Singolo</title>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="singolo2.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <header class="site-header">
-        <div class="wrapper">
-          <div class="header__inner">
-            <div class="header__logo">SINGOLO<span class="header__star">*</span></div>
-            <nav>
-              <ul class="header__nav-main">
-                <li class="header__nav"><a href="#">Home</a></li>
-                <li class="header__nav"><a href="#">Services</a></li>
-                <li class="header__nav"><a href="#">Portfolio</a></li>
-                <li class="header__nav"><a href="#">About</a></li>
-                <li class="header__nav"><a href="#">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </header>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="./singolo2.css">
+    <title>Singolo2</title>
 </head>
-<body class="content">
-    <main class="site-content">
-        <section class="slider">
-          <div class="wrapper">
-            <button type="button" class="slider__arrow slider__arrow--left"></button>
-            <div class="slider__phone-left phone phone--vertical">
-              <img class="phone__display" src="./assets/img/phone-display-vertical.png" alt="Phone">
-            </div>
-            <div class="slider__phone-right phone phone--horizontal">
-              <img class="phone__display" src="./assets/img/phone-display-horizontal.png" alt="Phone">
-            </div>
-            <button type="button" class="slider__arrow slider__arrow--right"></button>
-          </div>
-        </section>
-        <section class="services section" id="services">
-          <div class="wrapper">
-            <div class="section__header">
-              <h2 class="section__name">Our Services</h2>
-              <p class="section__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
-                Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce
-                dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-            </div>
-    
-            <ul class="services__list">
-              <li class="services__list-item">
-                <div class="services__item-image-border">
-                  <img class="services__item-image" width="32" height="32" src="./assets/img/services-list-item-1.svg" alt="Service">
+<body>
+    <div class="wrapper">
+        <div class="portfolio">
+            <div class="port_block">
+                <h1 class="heading">portfolio</h1>
+                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                <nav class="navbar_2">
+                    <ul>
+                        <li><a href="#" class="a_selected">all</a></li>
+                        <li><a href="#">web design</a></li>
+                        <li><a href="#">graphic design</a></li>
+                        <li><a href="#">artwork</a></li>
+                    </ul>
+                </nav>
+                <div class="photo">
+                    <div><img src="./assets/images/1.jpg" alt="ship"></div>
+                    <div><img src="./assets/images/2.jpg" alt="smile"></div>
+                    <div><img src="./assets/images/3.jpg" alt="cosmos"></div>
+                    <div><img src="./assets/images/4.jpg" alt="robot"></div>
+                    <div><img src="./assets/images/5.jpg" alt="animals"></div>
+                    <div><img src="./assets/images/6.jpg" alt="factory"></div>
+                    <div><img src="./assets/images/7.jpg" alt="camera"></div>
+                    <div><img src="./assets/images/8.jpg" alt="chiken"></div>
+                    <div><img src="./assets/images/9.jpg" alt="tower"></div>
+                    <div><img src="./assets/images/10.jpg" alt="text"></div>
+                    <div><img src="./assets/images/11.jpg" alt="red monster"></div>
+                    <div><img src="./assets/images/12.jpg" alt="note"></div>  
+                    <div><img src="./assets/images/11.jpg" alt="dont display"></div>
+                    <div><img src="./assets/images/11.jpg" alt="dont display"></div>
+                    <div><img src="./assets/images/11.jpg" alt="dont display"></div>
                 </div>
-                <span class="services__item-header">Custom Design</span>
-                <span class="services__item-description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</span>
-              </li>
-    
-              <li class="services__list-item">
-                <div class="services__item-image-border">
-                  <img class="services__item-image" width="22" height="32" src="./assets/img/services-list-item-2.svg" alt="Service">
-                </div>
-                <span class="services__item-header">Inovative Ideas</span>
-                <span class="services__item-description">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</span>
-              </li>
-    
-              <li class="services__list-item">
-                <div class="services__item-image-border">
-                  <img class="services__item-image" width="32" height="28" src="./assets/img/services-list-item-3.svg" alt="Service">
-                </div>
-                <span class="services__item-header">Love Is The Answer</span>
-                <span class="services__item-description">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</span>
-              </li>
-    
-              <li class="services__list-item">
-                <div class="services__item-image-border">
-                  <img class="services__item-image" width="22" height="32" src="./assets/img/services-list-item-4.svg" alt="Service">
-                </div>
-                <span class="services__item-header">Responsive Layout</span>
-                <span class="services__item-description">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</span>
-              </li>
-    
-              <li class="services__list-item">
-                <div class="services__item-image-border">
-                  <img class="services__item-image" width="32" height="28" src="./assets/img/services-list-item-5.svg" alt="Service">
-                </div>
-                <span class="services__item-header">24 / 7 Support</span>
-                <span class="services__item-description">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</span>
-              </li>
-    
-              <li class="services__list-item">
-                <div class="services__item-image-border">
-                  <img class="services__item-image" width="32" height="31" src="./assets/img/services-list-item-6.svg" alt="Service">
-                </div>
-                <span class="services__item-header">Feel Like A Star</span>
-                <span class="services__item-description">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</span>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="portfolio section" id="portfolio">
-          <div class="wrapper">
-            <div class="section__header">
-              <h2 class="section__name">Portfolio</h2>
-              <p class="section__description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
             </div>
-            <div class="filter">
-              <button class="filter__item filter__item--active">All</button>
-              <button class="filter__item">Web Design</button>
-              <button class="filter__item">Graphic Design</button>
-              <button class="filter__item">Artwork</button>
+        </div>
+        <div class="about_us">
+            <div class="about_block">
+                <h1 class="heading">about us</h1>
+                <p>Fusce dapibus, tellus ac cursus commodo, tortor 
+                    mauris condimentum. Duis mollis, non commodo 
+                    luctus, nisi erat porttitor ligula, eget 
+                    lacinia odio sem nec elit. Fusce dapibus, 
+                    tellus ac cursus commodo, tortor mauris 
+                    condimentum nibh.</p>
+                <div class="team">
+                    <div class="team_photo">
+                         <img src="./assets/images/adam.png" alt="Adam">   
+                         
+                         <h1>adam jensen</h1>
+                         <p>Quisque luctus, quam eget molestie commodo, 
+                             lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+                        <div class="social_media">
+                            <div><img src="./assets/images/facebook.png" alt="facebook"></div>
+                            <div><img src="./assets/images/google.png" alt="google"></div>
+                            <div><img src="./assets/images/twitter.png" alt="twitter"></div>
+                            <div><img src="./assets/images/linkedin.png" alt="linkedin"></div>
+                        </div>
+                    
+                    </div>
+                  
+                    <div class="team_photo desmond">
+                        <img src="./assets/images/desmond.png" alt="Desmond">   
+                        <h1>desmond miles</h1>
+                        <p>Curabitur vestibulum eget mauris quis laoreet. 
+                            Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                        <div class="social_media">
+                            <div><img src="./assets/images/facebook.png" alt="facebook"></div>
+                            <div><img src="./assets/images/google.png" alt="google"></div>
+                            <div><img src="./assets/images/twitter.png" alt="twitter"></div>
+                            <div><img src="./assets/images/linkedin.png" alt="linkedin"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="team_photo">
+                    <img src="./assets/images/scolara.png" alt="Scolara">
+                    <h1>scolara visari</h1>   
+                    <p>Nulla sed nunc et tortor luctus faucibus. Morbi at 
+                        aliquet turpis, et consequat felis. Quisque condimentum.</p>
+                        <div class="social_media">
+                            <div><img src="./assets/images/facebook.png" alt="facebook"></div>
+                            <div><img src="./assets/images/google.png" alt="google"></div>
+                            <div><img src="./assets/images/twitter.png" alt="twitter"></div>
+                            <div><img src="./assets/images/linkedin.png" alt="linkedin"></div>
+                        </div>
+                   </div>
+                
+                </div>
             </div>
-    
-            <ul class="portfolio__works">
-              <li class="portfolio__work-item">
-                <img class="portfolio__work-image" src="./assets/img/portfolio-1.png" alt="Work image">
-              </li>
-              <li class="portfolio__work-item">
-                <img class="portfolio__work-image" src="./assets/img/portfolio-2.png" alt="Work image">
-              </li>
-              <li class="portfolio__work-item">
-                <img class="portfolio__work-image" src="./assets/img/portfolio-3.png" alt="Work image">
-              </li>
-              <li class="portfolio__work-item">
-                <img class="portfolio__work-image" src="./assets/img/portfolio-4.png" alt="Work image">
-              </li>
-              <li class="portfolio__work-item">
-                <img class="portfolio__work-image" src="./assets/img/portfolio-5.png" alt="Work image">
-              </li>
-              <li class="portfolio__work-item">
-                <img class="portfolio__work-image" src="./assets/img/portfolio-6.png" alt="Work image">
-              </li>
-              <li class="portfolio__work-item">
-                <img class="portfolio__work-image" src="./assets/img/portfolio-7.png" alt="Work image">
-              </li>
-              <li class="portfolio__work-item">
-                <img class="portfolio__work-image" src="./assets/img/portfolio-8.png" alt="Work image">
-              </li>
-              <li class="portfolio__work-item">
-                <img class="portfolio__work-image" src="./assets/img/portfolio-9.png" alt="Work image">
-              </li>
-              <li class="portfolio__work-item">
-                <img class="portfolio__work-image" src="./assets/img/portfolio-10.png" alt="Work image">
-              </li>
-              <li class="portfolio__work-item">
-                <img class="portfolio__work-image" src="./assets/img/portfolio-11.png" alt="Work image">
-              </li>
-              <li class="portfolio__work-item">
-                <img class="portfolio__work-image" src="./assets/img/portfolio-12.png" alt="Work image">
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="about-us section">
-          <div class="wrapper">
-            <div class="section__header">
-              <h2 class="section__name" id="about">About Us</h2>
-              <p class="section__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-            </div>
-            <ul class="about-us__people-list">
-              <li class="about-us__person">
-                <img class="about-us__person-image" src="./assets/img/person-1.jpg" alt="Adam Jensen">
-                <span class="about-us__person-name">Adam Jensen</span>
-                <span class="about-us__person-description">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</span>
-                <ul class="social-list">
-                  <li>
-                    <a class="social-list__item" href="#">
-                      <svg width="8" height="100%" viewbox="0 0 50 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-                          <g transform="matrix(1,0,0,1,50,74.3545)">
-                              <g id="All-glyphs" serif:id="All glyphs">
-                                  <path d="M0,-58.708L-14.283,-58.708C-15.971,-58.708 -17.857,-56.487 -17.857,-53.516L-17.857,-43.201L0,-43.201L0,-28.501L-17.857,-28.501L-17.857,15.646L-34.715,15.646L-34.715,-28.501L-50,-28.501L-50,-43.201L-34.715,-43.201L-34.715,-51.854C-34.715,-64.262 -26.104,-74.354 -14.283,-74.354L0,-74.354L0,-58.708Z"/>
-                              </g>
-                          </g>
-                      </svg>
-                    </a>
-                  </li>
-    
-                  <li>
-                    <a class="social-list__item" href="#">
-                      <svg width="13" height="100%" viewbox="0 0 90 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-                        <g transform="matrix(1,0,0,1,74.6094,53.5902)">
-                            <g>
-                              <path d="M0,-19.18L0,-34.18L-9.5,-34.18L-9.5,-19.18L-24.5,-19.18L-24.5,-9.68L-9.5,-9.68L-9.5,5.32L0,5.32L0,-9.68L15,-9.68L15,-19.18L0,-19.18ZM-38.742,-36.459C-36.486,-28.526 -39.893,-20.23 -45.32,-18.701C-45.943,-18.526 -46.59,-18.436 -47.242,-18.436C-52.215,-18.436 -57.143,-23.467 -58.967,-30.396C-59.986,-34.289 -59.904,-37.692 -58.734,-40.964C-57.584,-44.183 -55.52,-46.357 -52.92,-47.088C-52.295,-47.265 -51.646,-47.355 -50.996,-47.355C-44.992,-47.355 -41.133,-44.866 -38.742,-36.459M-32.738,13.417C-32.299,20.45 -38.314,25.638 -47.346,26.296C-56.52,26.966 -64.072,22.836 -64.512,15.812C-64.725,12.438 -63.24,9.129 -60.336,6.496C-57.389,3.827 -53.344,2.181 -48.943,1.857C-48.424,1.824 -47.908,1.803 -47.395,1.803C-38.904,1.803 -33.154,6.794 -32.738,13.417M-69.855,-31.647C-69.855,-24.179 -67.361,-18.787 -62.443,-15.619C-58.418,-13.026 -53.742,-12.638 -51.314,-12.638C-50.725,-12.638 -50.252,-12.66 -49.922,-12.682C-49.922,-12.682 -50.693,-7.666 -46.973,-2.701L-47.141,-2.702C-53.586,-2.702 -74.609,-1.356 -74.609,15.926C-74.609,33.511 -55.301,34.404 -51.428,34.404C-51.125,34.404 -50.947,34.398 -50.947,34.398C-50.904,34.399 -50.627,34.41 -50.156,34.41C-47.67,34.41 -41.244,34.097 -35.277,31.197C-27.537,27.439 -23.609,20.904 -23.609,11.772C-23.609,2.947 -29.592,-2.305 -33.959,-6.144C-36.625,-8.482 -38.928,-10.502 -38.928,-12.466C-38.928,-14.467 -37.246,-15.971 -35.119,-17.876C-31.674,-20.957 -28.428,-25.342 -28.428,-33.631C-28.428,-40.918 -29.373,-45.809 -35.193,-48.912C-34.586,-49.223 -32.441,-49.45 -31.379,-49.596C-28.225,-50.027 -23.609,-50.516 -23.609,-53.092L-23.609,-53.59L-46.604,-53.59C-46.834,-53.584 -69.855,-52.731 -69.855,-31.647"/>
-                            </g>
-                        </g>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="social-list__item" href="#">
-                      <svg width="13" height="100%" viewbox="0 0 92 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-                        <g transform="matrix(1,0,0,1,92,65.9176)">
-                            <g>
-                              <path d="M0,-57.068C-3.387,-55.566 -7.023,-54.552 -10.842,-54.095C-6.943,-56.431 -3.951,-60.131 -2.541,-64.538C-6.189,-62.376 -10.229,-60.804 -14.527,-59.958C-17.971,-63.627 -22.877,-65.918 -28.305,-65.918C-38.729,-65.918 -47.18,-57.467 -47.18,-47.044C-47.18,-45.564 -47.014,-44.124 -46.691,-42.743C-62.377,-43.529 -76.289,-51.044 -85.596,-62.464C-87.221,-59.675 -88.152,-56.433 -88.152,-52.974C-88.152,-46.426 -84.82,-40.65 -79.756,-37.264C-82.848,-37.362 -85.76,-38.21 -88.305,-39.624C-88.307,-39.546 -88.307,-39.467 -88.307,-39.387C-88.307,-30.242 -81.799,-22.613 -73.166,-20.88C-74.748,-20.448 -76.416,-20.216 -78.139,-20.216C-79.354,-20.216 -80.535,-20.335 -81.689,-20.555C-79.287,-13.057 -72.314,-7.599 -64.057,-7.448C-70.518,-2.384 -78.654,0.633 -87.498,0.633C-89.021,0.633 -90.523,0.543 -92,0.367C-83.648,5.724 -73.729,8.85 -63.066,8.85C-28.35,8.85 -9.363,-19.913 -9.363,-44.856C-9.363,-45.672 -9.381,-46.487 -9.418,-47.298C-5.73,-49.958 -2.531,-53.282 0,-57.068"/>
-                            </g>
-                        </g>
-                     </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="social-list__item" href="#">
-                      <svg width="13" height="100%" viewbox="0 0 90 89" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-                        <g>
-                            <g transform="matrix(1,0,0,1,0,0.0003)">
-                                <path d="M0.506,26.837L19.748,26.837L19.748,88.738L0.506,88.738L0.506,26.837ZM20.379,9.621C20.379,14.936 16.455,19.241 9.998,19.241C3.924,19.241 0,14.936 0,9.621C0,4.177 4.051,0 10.252,0C16.455,0 20.254,4.177 20.379,9.621"/>
-                            </g>
-                            <g transform="matrix(1,0,0,1,31.2617,67.597)">
-                                <path d="M0,-21.013C0,-28.734 -0.252,-35.189 -0.504,-40.76L16.203,-40.76L17.092,-32.152L17.471,-32.152C20.002,-36.204 26.205,-42.154 36.586,-42.154C49.244,-42.154 58.738,-33.671 58.738,-15.444L58.738,21.141L39.496,21.141L39.496,-13.164C39.496,-21.14 36.711,-26.581 29.748,-26.581C24.432,-26.581 21.27,-22.911 19.877,-19.367C19.369,-18.102 19.242,-16.328 19.242,-14.556L19.242,21.141L0,21.141L0,-21.013Z"/>
-                            </g>
-                        </g>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="about-us__person">
-                <img class="about-us__person-image" src="./assets/img/person-2.jpg" alt="Desmond Miles">
-                <span class="about-us__person-name">Desmond Miles</span>
-                <span class="about-us__person-description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</span>
-                <ul class="social-list">
-                  <li>
-                    <a class="social-list__item" href="#">
-                      <svg width="8" height="100%" viewbox="0 0 50 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-                          <g transform="matrix(1,0,0,1,50,74.3545)">
-                              <g>
-                                  <path d="M0,-58.708L-14.283,-58.708C-15.971,-58.708 -17.857,-56.487 -17.857,-53.516L-17.857,-43.201L0,-43.201L0,-28.501L-17.857,-28.501L-17.857,15.646L-34.715,15.646L-34.715,-28.501L-50,-28.501L-50,-43.201L-34.715,-43.201L-34.715,-51.854C-34.715,-64.262 -26.104,-74.354 -14.283,-74.354L0,-74.354L0,-58.708Z"/>
-                              </g>
-                          </g>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="social-list__item" href="#">
-                      <svg width="13" height="100%" viewbox="0 0 90 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-                        <g transform="matrix(1,0,0,1,74.6094,53.5902)">
-                            <g>
-                              <path d="M0,-19.18L0,-34.18L-9.5,-34.18L-9.5,-19.18L-24.5,-19.18L-24.5,-9.68L-9.5,-9.68L-9.5,5.32L0,5.32L0,-9.68L15,-9.68L15,-19.18L0,-19.18ZM-38.742,-36.459C-36.486,-28.526 -39.893,-20.23 -45.32,-18.701C-45.943,-18.526 -46.59,-18.436 -47.242,-18.436C-52.215,-18.436 -57.143,-23.467 -58.967,-30.396C-59.986,-34.289 -59.904,-37.692 -58.734,-40.964C-57.584,-44.183 -55.52,-46.357 -52.92,-47.088C-52.295,-47.265 -51.646,-47.355 -50.996,-47.355C-44.992,-47.355 -41.133,-44.866 -38.742,-36.459M-32.738,13.417C-32.299,20.45 -38.314,25.638 -47.346,26.296C-56.52,26.966 -64.072,22.836 -64.512,15.812C-64.725,12.438 -63.24,9.129 -60.336,6.496C-57.389,3.827 -53.344,2.181 -48.943,1.857C-48.424,1.824 -47.908,1.803 -47.395,1.803C-38.904,1.803 -33.154,6.794 -32.738,13.417M-69.855,-31.647C-69.855,-24.179 -67.361,-18.787 -62.443,-15.619C-58.418,-13.026 -53.742,-12.638 -51.314,-12.638C-50.725,-12.638 -50.252,-12.66 -49.922,-12.682C-49.922,-12.682 -50.693,-7.666 -46.973,-2.701L-47.141,-2.702C-53.586,-2.702 -74.609,-1.356 -74.609,15.926C-74.609,33.511 -55.301,34.404 -51.428,34.404C-51.125,34.404 -50.947,34.398 -50.947,34.398C-50.904,34.399 -50.627,34.41 -50.156,34.41C-47.67,34.41 -41.244,34.097 -35.277,31.197C-27.537,27.439 -23.609,20.904 -23.609,11.772C-23.609,2.947 -29.592,-2.305 -33.959,-6.144C-36.625,-8.482 -38.928,-10.502 -38.928,-12.466C-38.928,-14.467 -37.246,-15.971 -35.119,-17.876C-31.674,-20.957 -28.428,-25.342 -28.428,-33.631C-28.428,-40.918 -29.373,-45.809 -35.193,-48.912C-34.586,-49.223 -32.441,-49.45 -31.379,-49.596C-28.225,-50.027 -23.609,-50.516 -23.609,-53.092L-23.609,-53.59L-46.604,-53.59C-46.834,-53.584 -69.855,-52.731 -69.855,-31.647"/>
-                            </g>
-                        </g>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="social-list__item" href="#">
-                      <svg width="13" height="100%" viewbox="0 0 92 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-                        <g transform="matrix(1,0,0,1,92,65.9176)">
-                            <g>
-                              <path d="M0,-57.068C-3.387,-55.566 -7.023,-54.552 -10.842,-54.095C-6.943,-56.431 -3.951,-60.131 -2.541,-64.538C-6.189,-62.376 -10.229,-60.804 -14.527,-59.958C-17.971,-63.627 -22.877,-65.918 -28.305,-65.918C-38.729,-65.918 -47.18,-57.467 -47.18,-47.044C-47.18,-45.564 -47.014,-44.124 -46.691,-42.743C-62.377,-43.529 -76.289,-51.044 -85.596,-62.464C-87.221,-59.675 -88.152,-56.433 -88.152,-52.974C-88.152,-46.426 -84.82,-40.65 -79.756,-37.264C-82.848,-37.362 -85.76,-38.21 -88.305,-39.624C-88.307,-39.546 -88.307,-39.467 -88.307,-39.387C-88.307,-30.242 -81.799,-22.613 -73.166,-20.88C-74.748,-20.448 -76.416,-20.216 -78.139,-20.216C-79.354,-20.216 -80.535,-20.335 -81.689,-20.555C-79.287,-13.057 -72.314,-7.599 -64.057,-7.448C-70.518,-2.384 -78.654,0.633 -87.498,0.633C-89.021,0.633 -90.523,0.543 -92,0.367C-83.648,5.724 -73.729,8.85 -63.066,8.85C-28.35,8.85 -9.363,-19.913 -9.363,-44.856C-9.363,-45.672 -9.381,-46.487 -9.418,-47.298C-5.73,-49.958 -2.531,-53.282 0,-57.068"/>
-                            </g>
-                        </g>
-                     </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="social-list__item" href="#">
-                      <svg width="13" height="100%" viewbox="0 0 90 89" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-                        <g>
-                          <g transform="matrix(1,0,0,1,0,0.0003)">
-                              <path d="M0.506,26.837L19.748,26.837L19.748,88.738L0.506,88.738L0.506,26.837ZM20.379,9.621C20.379,14.936 16.455,19.241 9.998,19.241C3.924,19.241 0,14.936 0,9.621C0,4.177 4.051,0 10.252,0C16.455,0 20.254,4.177 20.379,9.621"/>
-                          </g>
-                          <g transform="matrix(1,0,0,1,31.2617,67.597)">
-                              <path d="M0,-21.013C0,-28.734 -0.252,-35.189 -0.504,-40.76L16.203,-40.76L17.092,-32.152L17.471,-32.152C20.002,-36.204 26.205,-42.154 36.586,-42.154C49.244,-42.154 58.738,-33.671 58.738,-15.444L58.738,21.141L39.496,21.141L39.496,-13.164C39.496,-21.14 36.711,-26.581 29.748,-26.581C24.432,-26.581 21.27,-22.911 19.877,-19.367C19.369,-18.102 19.242,-16.328 19.242,-14.556L19.242,21.141L0,21.141L0,-21.013Z"/>
-                          </g>
-                        </g>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="about-us__person">
-                <img class="about-us__person-image" src="./assets/img/person-3.jpg" alt="Desmond Miles">
-                <span class="about-us__person-name">Scolara Visari</span>
-                <span class="about-us__person-description">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</span>
-                <ul class="social-list">
-                  <li>
-                    <a class="social-list__item" href="#">
-                      <svg width="8" height="100%" viewbox="0 0 50 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-                          <g transform="matrix(1,0,0,1,50,74.3545)">
-                              <g>
-                                  <path d="M0,-58.708L-14.283,-58.708C-15.971,-58.708 -17.857,-56.487 -17.857,-53.516L-17.857,-43.201L0,-43.201L0,-28.501L-17.857,-28.501L-17.857,15.646L-34.715,15.646L-34.715,-28.501L-50,-28.501L-50,-43.201L-34.715,-43.201L-34.715,-51.854C-34.715,-64.262 -26.104,-74.354 -14.283,-74.354L0,-74.354L0,-58.708Z"/>
-                              </g>
-                          </g>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="social-list__item" href="#">
-                      <svg width="13" height="100%" viewbox="0 0 90 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-                        <g transform="matrix(1,0,0,1,74.6094,53.5902)">
-                            <g>
-                              <path d="M0,-19.18L0,-34.18L-9.5,-34.18L-9.5,-19.18L-24.5,-19.18L-24.5,-9.68L-9.5,-9.68L-9.5,5.32L0,5.32L0,-9.68L15,-9.68L15,-19.18L0,-19.18ZM-38.742,-36.459C-36.486,-28.526 -39.893,-20.23 -45.32,-18.701C-45.943,-18.526 -46.59,-18.436 -47.242,-18.436C-52.215,-18.436 -57.143,-23.467 -58.967,-30.396C-59.986,-34.289 -59.904,-37.692 -58.734,-40.964C-57.584,-44.183 -55.52,-46.357 -52.92,-47.088C-52.295,-47.265 -51.646,-47.355 -50.996,-47.355C-44.992,-47.355 -41.133,-44.866 -38.742,-36.459M-32.738,13.417C-32.299,20.45 -38.314,25.638 -47.346,26.296C-56.52,26.966 -64.072,22.836 -64.512,15.812C-64.725,12.438 -63.24,9.129 -60.336,6.496C-57.389,3.827 -53.344,2.181 -48.943,1.857C-48.424,1.824 -47.908,1.803 -47.395,1.803C-38.904,1.803 -33.154,6.794 -32.738,13.417M-69.855,-31.647C-69.855,-24.179 -67.361,-18.787 -62.443,-15.619C-58.418,-13.026 -53.742,-12.638 -51.314,-12.638C-50.725,-12.638 -50.252,-12.66 -49.922,-12.682C-49.922,-12.682 -50.693,-7.666 -46.973,-2.701L-47.141,-2.702C-53.586,-2.702 -74.609,-1.356 -74.609,15.926C-74.609,33.511 -55.301,34.404 -51.428,34.404C-51.125,34.404 -50.947,34.398 -50.947,34.398C-50.904,34.399 -50.627,34.41 -50.156,34.41C-47.67,34.41 -41.244,34.097 -35.277,31.197C-27.537,27.439 -23.609,20.904 -23.609,11.772C-23.609,2.947 -29.592,-2.305 -33.959,-6.144C-36.625,-8.482 -38.928,-10.502 -38.928,-12.466C-38.928,-14.467 -37.246,-15.971 -35.119,-17.876C-31.674,-20.957 -28.428,-25.342 -28.428,-33.631C-28.428,-40.918 -29.373,-45.809 -35.193,-48.912C-34.586,-49.223 -32.441,-49.45 -31.379,-49.596C-28.225,-50.027 -23.609,-50.516 -23.609,-53.092L-23.609,-53.59L-46.604,-53.59C-46.834,-53.584 -69.855,-52.731 -69.855,-31.647"/>
-                            </g>
-                        </g>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="social-list__item" href="#">
-                      <svg width="13" height="100%" viewbox="0 0 92 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-                        <g transform="matrix(1,0,0,1,92,65.9176)">
-                            <g>
-                              <path d="M0,-57.068C-3.387,-55.566 -7.023,-54.552 -10.842,-54.095C-6.943,-56.431 -3.951,-60.131 -2.541,-64.538C-6.189,-62.376 -10.229,-60.804 -14.527,-59.958C-17.971,-63.627 -22.877,-65.918 -28.305,-65.918C-38.729,-65.918 -47.18,-57.467 -47.18,-47.044C-47.18,-45.564 -47.014,-44.124 -46.691,-42.743C-62.377,-43.529 -76.289,-51.044 -85.596,-62.464C-87.221,-59.675 -88.152,-56.433 -88.152,-52.974C-88.152,-46.426 -84.82,-40.65 -79.756,-37.264C-82.848,-37.362 -85.76,-38.21 -88.305,-39.624C-88.307,-39.546 -88.307,-39.467 -88.307,-39.387C-88.307,-30.242 -81.799,-22.613 -73.166,-20.88C-74.748,-20.448 -76.416,-20.216 -78.139,-20.216C-79.354,-20.216 -80.535,-20.335 -81.689,-20.555C-79.287,-13.057 -72.314,-7.599 -64.057,-7.448C-70.518,-2.384 -78.654,0.633 -87.498,0.633C-89.021,0.633 -90.523,0.543 -92,0.367C-83.648,5.724 -73.729,8.85 -63.066,8.85C-28.35,8.85 -9.363,-19.913 -9.363,-44.856C-9.363,-45.672 -9.381,-46.487 -9.418,-47.298C-5.73,-49.958 -2.531,-53.282 0,-57.068"/>
-                            </g>
-                        </g>
-                     </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="social-list__item" href="#">
-                      <svg width="13" height="100%" viewbox="0 0 90 89" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-                        <g>
-                            <g transform="matrix(1,0,0,1,0,0.0003)">
-                                <path d="M0.506,26.837L19.748,26.837L19.748,88.738L0.506,88.738L0.506,26.837ZM20.379,9.621C20.379,14.936 16.455,19.241 9.998,19.241C3.924,19.241 0,14.936 0,9.621C0,4.177 4.051,0 10.252,0C16.455,0 20.254,4.177 20.379,9.621"/>
-                            </g>
-                            <g transform="matrix(1,0,0,1,31.2617,67.597)">
-                                <path d="M0,-21.013C0,-28.734 -0.252,-35.189 -0.504,-40.76L16.203,-40.76L17.092,-32.152L17.471,-32.152C20.002,-36.204 26.205,-42.154 36.586,-42.154C49.244,-42.154 58.738,-33.671 58.738,-15.444L58.738,21.141L39.496,21.141L39.496,-13.164C39.496,-21.14 36.711,-26.581 29.748,-26.581C24.432,-26.581 21.27,-22.911 19.877,-19.367C19.369,-18.102 19.242,-16.328 19.242,-14.556L19.242,21.141L0,21.141L0,-21.013Z"/>
-                            </g>
-                        </g>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </section>
-        </main>
+        </div>
+    </div>
 </body>
 </html>

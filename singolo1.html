@@ -1,41 +1,129 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="singolo1.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="./singolo1.css">
     <title>Singolo</title>
-    <div class="intro">
-            <div class="container">
-                <header>
-                    <div class="header__inner">
-                        <div class="header__logo">SINGOLO<span class="header__star">*</span></div>
-                        <nav class="nav">
-                            <a class="nav__link" href="#">Home</a>
-                            <a class="nav__link" href="#">Services</a>
-                            <a class="nav__link" href="#">Portfolio</a>
-                            <a class="nav__link" href="#">About</a>
-                            <a class="nav__link" href="#">Contact</a>
-                            </nav>
-                        </div>
-                </header>
-            </div>
-    </div>
-    <div class="intro-bottom"></div>
 </head>
 <body>
-    <div class="container">
-        <div class="main">
-            <div class="slider">
-                <a class="slider__left" href="#"></a>
-                <a class="slider__right" href="#"></a>
+   <div class="wrapper">
+       <header class="header">
+           
+           <h1 class="logo">singolo<span class="red">*</span></h1>
+           <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="selected">home</a>
+                    </li>
+                    <li class="dot">
+                        ·
+                    </li>
+                    <li>
+                        <a href="#">services</a>
+                    </li>
+                    <li class="dot">
+                        ·
+                    </li>
+                    <li>
+                        <a href="#">portfolio</a>
+                    </li>
+                    <li class="dot">
+                        ·
+                    </li>
+                    <li>
+                        <a href="#">about</a>
+                    </li>
+                    <li class="dot">
+                        ·
+                    </li>
+                    <li>
+                        <a href="#">contact</a>
+                    </li>
+               </ul>
+           </nav>
+        </header>
+        <main class="slider">
+            <div class="back">
+                <a href="#"> <img class="back_btn" src="./assets/images/back.png" alt="back button"></a>
             </div>
-        </div>
-        </div>
-        <div class="bg__services"></div>
-        <div class="bg__services-bottom"></div>
-    </div>
+            <div class="forward">
+                <a href="#"> <img class="forward_btn" src="./assets/images/forward.png" alt="forward button"></a>
+            </div>
+            <div class="phones">
+                <div>
+                <img src="./assets/images/ivert.png" alt="Iphone 1" class="iphone_vert">
+                </div>
+                <div>
+                <img src="./assets/images/ihor.png" alt="Iphone 2" class="iphone_hor">
+                </div>
+            </div>        
+        </main>
+
+        <footer>
+            <div class="footer">
+                <h1 class="services">our services</h1>
+                <p class="intro">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                <div class="footer_menu">
+                    <div>
+                        <div class="img_footer">
+                            <img class="img_footer_mrg" src="./assets/images/pen.png" alt="pen">
+                        </div>
+                        <div class="text_footer">
+                            <p class="title custom">custom design</p>
+                            <p class="description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                        </div>
+                    </div>
+                    <div class="marg">
+                        <div class="img_footer">
+                            <img class="img_footer_mrg" src="./assets/images/bulb.png" alt="pen">
+                        </div>
+                        <div class="text_footer">
+                            <p class="title inovative">inovative ideas</p>
+                            <p class="description">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img_footer">
+                            <img class="img_footer_mrg" src="./assets/images/heart.png" alt="pen">
+                        </div>
+                        <div class="text_footer">
+                            <p class="title love">love is the answer</p>
+                            <p class="description">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img_footer">
+                            <img class="img_footer_mrg" src="./assets/images/phone.png" alt="pen">
+                        </div>
+                        <div class="text_footer">
+                            <p class="title responsive">responsive layout</p>
+                            <p class="description">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
+                        </div>
+                    </div>
+                    <div class="marg">
+                        <div class="img_footer">
+                            <img class="img_footer_mrg" src="./assets/images/bubble.png" alt="pen">
+                        </div>
+                        <div class="text_footer">
+                            <p class="title daynight">24 / 7 support</p>
+                            <p class="description">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img_footer">
+                            <img class="img_footer_mrg" src="./assets/images/star.png" alt="pen">
+                        </div>
+                        <div class="text_footer">
+                            <p class="title star">feel like a star</p>
+                            <p class="description">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+           
+        </footer>
+   </div>
 </body>
 </html>

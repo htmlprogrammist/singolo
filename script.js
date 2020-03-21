@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const iphoneVert = document.getElementById('iphone_vert');
 const blackScreenVert = document.getElementById('vert');
 const iphoneHor = document.getElementById('iphone_hor');
@@ -213,3 +214,6 @@ close_btn.addEventListener('click', () => {
 	message_block.classList.add('hidden');
 	document.getElementById('form').reset();
 });
+=======
+// new file
+>>>>>>> 4e77407d688886cceec51a689df67d2f83476f3d

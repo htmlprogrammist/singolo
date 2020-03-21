@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const iphoneVert = document.getElementById('iphone_vert');
 const blackScreenVert = document.getElementById('vert');
 const iphoneHor = document.getElementById('iphone_hor');

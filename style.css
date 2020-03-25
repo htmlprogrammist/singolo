@@ -771,18 +771,16 @@ body, html {
 }
 
 .info_form button{
-    font-size: 18px;
-    line-height: 22px;
-    color: #363030;
-    font-family: 'Lato Bold';
-    
-    text-align: left;
-
-    background-color: #e7e4b7; 
-    border-radius: 5px;   
-    border: none; 
-    margin-top: 10px;
-    cursor: pointer;
+  height: 38px;
+  width: 100px;
+  border: none;
+  background-color: #d6564f;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #f0d8d9;
+  transition: 0.27s ease-out;
+  font-weight: 400;
 }
 
 

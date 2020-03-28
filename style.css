@@ -910,28 +910,20 @@ body {
 }
 
 .button {
-  /* Блочная модель */
   height: 38px;
-
-  /* Типографика */
-  text-transform: uppercase;
-  color: #886A30;
-  font-weight: bold;
-
-  /* Оформление */
+  width: 100px;
   border: none;
-  background: #FBC65F;
-  border-radius: 5px;
-  outline: none;
+  background-color: #d6564f;
+  border-radius: 4px;
   cursor: pointer;
-  user-select: none;
-
-  /* Анимация */
-  transition: .1s ease-out;
+  text-transform: uppercase;
+  color: #f0d8d9;
+  transition: 0.27s ease-out;
+  font-weight: bold;
+  height: 38px;
 }
 
 .button:hover {
-  /* Оформление */
   background-color: #F9AF1F;
   box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.39);
 }

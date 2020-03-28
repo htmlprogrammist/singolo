@@ -1,304 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
-    <title>Singolo</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Singolo</title>
+  <meta name="description" content="It's test project. In real project I will past here move right info.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="./assets/fonts/fonts.css">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./script.js"></script>
 </head>
-<body>
-    
-   <div class="wrapper">
-       <div class="header">
-           
-           <h1 class="logo">singolo<span class="red">*</span></h1>
-           <nav class="navbar">
-                <ul id="menu">
-                    <li>
-                        <a href="#home" class="selected">home</a>
-                    </li>
-                    <li class="dot">
-                        ·
-                    </li>
-                    <li>
-                        <a href="#services">services</a>
-                    </li>
-                    <li class="dot">
-                        ·
-                    </li>
-                    <li>
-                        <a href="#portfolio">portfolio</a>
-                    </li>
-                    <li class="dot">
-                        ·
-                    </li>
-                    <li>
-                        <a href="#about">about</a>
-                    </li>
-                    <li class="dot">
-                        ·
-                    </li>
-                    <li>
-                        <a href="#contact">contact</a>
-                    </li>
-               </ul>
-           </nav>
-        </div>
+<body class="content preload">
+  <header class="site-header site-header--mobile">
+    <div class="wrapper">
+      <button class="site-header__burger" title="Open menu"></button>
+      <a class="site-header__logo logo" href="./index.html">
+        <img src="./assets/img/logo.svg" alt="Logo">
+      </a>
 
-        <div id="home" class="slider">
-            <div class="back">
-                <img class="back_btn" src="./assets/images/back.png" alt="back button">
-            </div>
-            <div class="forward">
-                 <img class="forward_btn" src="./assets/images/forward.png" alt="forward button">
-            </div>
-
-            <div class="items-container">
-                <div class="background phones item active">
-                    <div>
-                        <img class="screen" id="vert" src="./assets/images/black_screen_vert.png" alt="black screen">
-                        <img  src="./assets/images/ivert.png" alt="Iphone 1" id="iphone_vert">
-                    </div>
-                    <div>
-                        <img class="screen" id="hor" src="./assets/images/black_screen_hor.png" alt="black screen">
-                        <img src="./assets/images/ihor.png" alt="Iphone 2" id="iphone_hor">
-                    </div>
-                </div> 
-                <div class="item">
-                    <img class="bluescr"src="./assets/images/slider.png" alt="blue">
-                </div>       
-            </div>
-            
-        </div>
+      <div class="site-header__nav-shadow"></div>
+      <nav>
+        <ul class="site-header__nav">
+          <li class="site-header__nav-item"><a class="site-header__nav-link site-header__nav-link--active" href="#home">Home</a></li>
+          <li class="site-header__nav-item"><a class="site-header__nav-link" href="#services">Services</a></li>
+          <li class="site-header__nav-item"><a class="site-header__nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="site-header__nav-item"><a class="site-header__nav-link" href="#about">About</a></li>
+          <li class="site-header__nav-item"><a class="site-header__nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="site-content">
+    <h1 class="visually-hidden">Singolo</h1>
+    <div id="home" class="section-start"></div>
+    <section class="slider slider--red">
+      <h2 class="visually-hidden">Slider</h2>
+      <div class="slider__wrapper wrapper">
+        <button type="button" class="slider__arrow slider__arrow--left" title="Left"></button>
         
+        <div class="slide__wrapper visually-hidden">
+          <div class="slide slide--active">
+            <div class="phone phone--vertical slider__left">
+              <img class="phone__body" src="./assets/img/phone-vertical.svg" alt="Phone body">
+              <img class="phone__display" src="./assets/img/phone-vertical-display.png" alt="Phone display">
+              <img class="phone__shadow" src="./assets/img/phone-vertical-shadow.png" alt="Phone shadow">
+            </div>
 
-        <div id="services"  class="first_footer">
-            <div  class="footer">
-                <h1 class="services">our services</h1>
-                <p class="intro">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                <div class="footer_menu">
-                    <div>
-                        <div class="img_footer">
-                            <img class="img_footer_mrg" src="./assets/images/pen.png" alt="pen">
-                        </div>
-                        <div class="text_footer">
-                            <p class="title custom">custom design</p>
-                            <p class="description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
-                        </div>
-                    </div>
-                    <div class="marg">
-                        <div class="img_footer">
-                            <img class="img_footer_mrg" src="./assets/images/bulb.png" alt="pen">
-                        </div>
-                        <div class="text_footer">
-                            <p class="title inovative">inovative ideas</p>
-                            <p class="description">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="img_footer">
-                            <img class="img_footer_mrg" src="./assets/images/heart.png" alt="pen">
-                        </div>
-                        <div class="text_footer">
-                            <p class="title love">love is the answer</p>
-                            <p class="description">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="img_footer">
-                            <img class="img_footer_mrg" src="./assets/images/phone.png" alt="pen">
-                        </div>
-                        <div class="text_footer">
-                            <p class="title responsive">responsive layout</p>
-                            <p class="description">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
-                        </div>
-                    </div>
-                    <div class="marg">
-                        <div class="img_footer">
-                            <img class="img_footer_mrg" src="./assets/images/bubble.png" alt="pen">
-                        </div>
-                        <div class="text_footer">
-                            <p class="title daynight">24 / 7 support</p>
-                            <p class="description">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="img_footer">
-                            <img class="img_footer_mrg" src="./assets/images/star.png" alt="pen">
-                        </div>
-                        <div class="text_footer">
-                            <p class="title star">feel like a star</p>
-                            <p class="description">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>  
-           
+            <div class="phone phone--horizontal slide__right">
+              <img class="phone__body" src="./assets/img/phone-horizontal.svg" alt="Phone body">
+              <img class="phone__display" src="./assets/img/phone-horizontal-display.png" alt="Phone display">
+              <img class="phone__shadow" src="./assets/img/phone-horizontal-shadow.png" alt="Phone shadow">
+            </div>
+          </div>
+
+        <div class="slide">
+          <img class="slider__phones slide__static-image" src="./assets/img/phone-group.png" alt="Phones">
+        </div>
+      </div>
+        
+        <button type="button" class="slider__arrow slider__arrow--right" title="Right"></button>
+      </div>
+    </section>
+    
+    <div id="services" class="section-start"></div>
+    <section class="services section">
+      <div class="wrapper">
+        <div class="section__header">
+          <h2 class="section__name">Our Services</h2>
+          <p class="section__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
+            Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce
+            dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         </div>
 
-        <div id="portfolio" class="portfolio">
-            <div class="port_block">
-                <h1 class="heading">portfolio</h1>
-                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                <nav class="navbar_2">
-                    <ul id="port_li">
-                        <li class="a_selected" id="all">all</li>
-                        <li id="web">web design</li>
-                        <li id="graphic">graphic design</li>
-                        <li id="art">artwork</li>
-                    </ul>
-                </nav>
-                <div id="photo">
-                    <div id="picture1"><img src="./assets/images/1.jpg" alt="ship"></div>
-                    <div id="picture2"><img src="./assets/images/2.jpg" alt="smile"></div>
-                    <div id="picture3"><img src="./assets/images/3.jpg" alt="cosmos"></div>
-                    <div><img src="./assets/images/4.jpg" alt="robot"></div>
-                    <div><img src="./assets/images/5.jpg" alt="animals"></div>
-                    <div><img src="./assets/images/6.jpg" alt="factory"></div>
-                    <div><img src="./assets/images/7.jpg" alt="camera"></div>
-                    <div><img src="./assets/images/8.jpg" alt="chiken"></div>
-                    <div><img src="./assets/images/9.jpg" alt="tower"></div>
-                    <div><img src="./assets/images/10.jpg" alt="text"></div>
-                    <div><img src="./assets/images/11.jpg" alt="red monster"></div>
-                    <div><img src="./assets/images/12.jpg" alt="note"></div>  
-                    <!-- <div><img src="./assets/images/11.jpg" alt="dont display"></div>
-                    <div><img src="./assets/images/11.jpg" alt="dont display"></div>
-                    <div><img src="./assets/images/11.jpg" alt="dont display"></div> -->
-                </div>
-            </div>
-        </div>
-        <div id="about" class="about_us">
-            <div class="about_block">
-                <h1 class="heading">about us</h1>
-                <p>Fusce dapibus, tellus ac cursus commodo, tortor 
-                    mauris condimentum. Duis mollis, non commodo 
-                    luctus, nisi erat porttitor ligula, eget 
-                    lacinia odio sem nec elit. Fusce dapibus, 
-                    tellus ac cursus commodo, tortor mauris 
-                    condimentum nibh.</p>
-                <div class="team">
-                    <div class="team_photo">
-                         <img src="./assets/images/adam.png" alt="Adam">   
-                         
-                         <h1>adam jensen</h1>
-                         <p>Quisque luctus, quam eget molestie commodo, 
-                             lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
-                        <div class="social_media">
-                            <div><img src="./assets/images/facebook.png" alt="facebook"></div>
-                            <div><img src="./assets/images/google.png" alt="google"></div>
-                            <div><img src="./assets/images/twitter.png" alt="twitter"></div>
-                            <div><img src="./assets/images/linkedin.png" alt="linkedin"></div>
-                        </div>
-                    
-                    </div>
-                  
-                    <div class="team_photo desmond">
-                        <img src="./assets/images/desmond.png" alt="Desmond">   
-                        <h1>desmond miles</h1>
-                        <p>Curabitur vestibulum eget mauris quis laoreet. 
-                            Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
-                        <div class="social_media">
-                            <div><img src="./assets/images/facebook.png" alt="facebook"></div>
-                            <div><img src="./assets/images/google.png" alt="google"></div>
-                            <div><img src="./assets/images/twitter.png" alt="twitter"></div>
-                            <div><img src="./assets/images/linkedin.png" alt="linkedin"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="team_photo">
-                    <img src="./assets/images/scolara.png" alt="Scolara">
-                    <h1>scolara visari</h1>   
-                    <p>Nulla sed nunc et tortor luctus faucibus. Morbi at 
-                        aliquet turpis, et consequat felis. Quisque condimentum.</p>
-                        <div class="social_media">
-                            <div><img src="./assets/images/facebook.png" alt="facebook"></div>
-                            <div><img src="./assets/images/google.png" alt="google"></div>
-                            <div><img src="./assets/images/twitter.png" alt="twitter"></div>
-                            <div><img src="./assets/images/linkedin.png" alt="linkedin"></div>
-                        </div>
-                   </div>
-                
-                </div>
-            </div>
+        <ul class="services__list">
+          <li class="services__list-item">
+            <img class="services__item-image" src="./assets/img/services-item-1.svg" alt="Service">
+            <article class="article">
+              <h3 class="article__header">Custom Design</h3>
+              <p class="article__description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+            </article>
+          </li>
+
+          <li class="services__list-item">
+            <img class="services__item-image" src="./assets/img/services-item-2.svg" alt="Service">
+            <article class="article">
+              <h3 class="article__header">Inovative Ideas</h3>
+              <p class="article__description">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+            </article>
+          </li>
+
+          <li class="services__list-item">
+            <img class="services__item-image" src="./assets/img/services-item-3.svg" alt="Service">
+            <article class="article">
+              <h3 class="article__header">Love Is The Answer</h3>
+              <p class="article__description">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+            </article>
+          </li>
+
+          <li class="services__list-item">
+            <img class="services__item-image" src="./assets/img/services-item-4.svg" alt="Service">
+            <article class="article">
+              <h3 class="article__header">Responsive Layout</h3>
+              <p class="article__description">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
+            </article>
+          </li>
+
+          <li class="services__list-item">
+            <img class="services__item-image" src="./assets/img/services-item-5.svg" alt="Service">
+            <article class="article">
+              <h3 class="article__header">24 / 7 Support</h3>
+              <p class="article__description">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
+            </article>
+          </li>
+
+          <li class="services__list-item">
+            <img class="services__item-image" src="./assets/img/services-item-6.svg" alt="Service">
+            
+            <article class="article">
+              <h3 class="article__header">Feel Like A Star</h3>
+              <p class="article__description">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <div id="portfolio" class="section-start"></div>
+    <section class="portfolio section">
+      <div class="wrapper">
+        <div class="section__header">
+          <h2 class="section__name">Portfolio</h2>
+          <p class="section__description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
         </div>
 
-        <div id="contact" class="input">
-            <div class="form_block"> 
-                <h1>Get a Quote</h1>
-                <p class="p_form">Fusce dapibus, tellus ac cursus commodo, tortor 
-                    mauris condimentum. Duis mollis, non commodo luctus, 
-                    nisi erat porttitor ligula, eget lacinia odio 
-                    sem nec elit. Fusce dapibus, tellus ac cursus commodo, 
-                    tortor mauris condimentum nibh.</p>
-                <div class="form">
-                    <div class="fields">
-                        <form class="info_form" method="POST" name="user_data" id="form">
-                            <fieldset>
-                                <input id="username" type="text" name="username" placeholder="Name (Required)" required>
-                                <input type="email" name="email" placeholder="Email (Required)" required>
-                                <input type="text" name="subject" placeholder="Subject" id="subject" maxlength="70">
-                                <textarea name="description" placeholder="Describe your project in detail..." id="description" maxlength="100"></textarea>
-                            </fieldset>
-                            <button id="submit" type="submit">Submit</button>
-                            <div id="message-block" class="hidden">
-                               <div id="message">
-                                   <div class="msg">
-                                        <p>Письмо отправлено</p>
-                                        <br>
-                                        <p><span id="subj-res"></span></p>
-                                        <br>
-                                        <p><span id="des-res"></span></p>
-                                        
-                                    </div>
-                                    <button id="close-btn" type="submit">OK</button>
-                               </div>
-                            </div>
-                        </form>
-                    </div> 
-                    <div class="form_contacts">
-                        <h1>contact information</h1>
-                        <p class="p_form_contacts">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. 
-                            Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. </p>
-                        <div class="contacts">
-                            <div>
-                                <div id="location">
-                                <img src="./assets/images/location.png" alt="location">
-                                </div>
-                                <p class="p_contacts_1">Elm St. 14/05 Lost City</p>
-                            </div>
-                            <div>
-                                <div id="phone">
-                                    <img src="./assets/images/phone_form.png" alt="phone">
-                                </div>
-                                <a class="a_contacts_2" href="tel:035283318635">03528 331 86 35</a>
-                            </div>  
-                            <div>
-                                <div id="mail">
-                                    <img src="./assets/images/mail.png" alt="mail">
-                                </div>
-                                <a  class="a_contacts_3" href="mailto:info@singolo.com">info@singolo.com</a>
-                         </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        <div class="last_footer"> 
-            <div class="footer_2">
-                <p>© Copyright 2013</p>
-                <div class="footer_social">
-                    <div><img src="./assets/images/facebook.png" alt="facebook"></div>
-                    <div><img src="./assets/images/google.png" alt="google"></div>
-                    <div><img src="./assets/images/twitter.png" alt="twitter"></div>
-                    <div><img src="./assets/images/linkedin.png" alt="linkedin"></div>
-                </div>
-            </div>
+        <div class="filter">
+          <button class="filter__item">All</button>
+          <button class="filter__item">Web Design</button>
+          <button class="filter__item">Graphic Design</button>
+          <button class="filter__item">Artwork</button>
         </div>
 
-   </div>
-   <script src="script.js"></script>
+        <ul class="portfolio__works">
+          <li class="portfolio__work-item">
+            <img class="portfolio__work-image" src="./assets/img/portfolio-1.png" alt="Work image">
+          </li>
+          <li class="portfolio__work-item">
+            <img class="portfolio__work-image" src="./assets/img/portfolio-2.png" alt="Work image">
+          </li>
+          <li class="portfolio__work-item">
+            <img class="portfolio__work-image" src="./assets/img/portfolio-3.png" alt="Work image">
+          </li>
+          <li class="portfolio__work-item">
+            <img class="portfolio__work-image" src="./assets/img/portfolio-4.png" alt="Work image">
+          </li>
+          <li class="portfolio__work-item">
+            <img class="portfolio__work-image" src="./assets/img/portfolio-5.png" alt="Work image">
+          </li>
+          <li class="portfolio__work-item">
+            <img class="portfolio__work-image" src="./assets/img/portfolio-6.png" alt="Work image">
+          </li>
+          <li class="portfolio__work-item">
+            <img class="portfolio__work-image" src="./assets/img/portfolio-7.png" alt="Work image">
+          </li>
+          <li class="portfolio__work-item">
+            <img class="portfolio__work-image" src="./assets/img/portfolio-8.png" alt="Work image">
+          </li>
+          <li class="portfolio__work-item">
+            <img class="portfolio__work-image" src="./assets/img/portfolio-9.png" alt="Work image">
+          </li>
+          <li class="portfolio__work-item">
+            <img class="portfolio__work-image" src="./assets/img/portfolio-10.png" alt="Work image">
+          </li>
+          <li class="portfolio__work-item">
+            <img class="portfolio__work-image" src="./assets/img/portfolio-11.png" alt="Work image">
+          </li>
+          <li class="portfolio__work-item">
+            <img class="portfolio__work-image" src="./assets/img/portfolio-12.png" alt="Work image">
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <div id="about" class="section-start"></div>
+    <section class="about-us section">
+      <div class="wrapper">
+        <div class="section__header">
+          <h2 class="section__name">About Us</h2>
+          <p class="section__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+        </div>
+
+        <ul class="about-us__people-list">
+          <li class="person">
+            <img class="person__image" src="./assets/img/person-1.jpg" alt="Adam Jensen">
+            
+            <article class="article person__article">
+              <h3 class="article__header person__name">Adam Jensen</h3>
+              <p class="article__description">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+            </article>
+            
+            <ul class="social-list">
+              <li>
+                <a class="social-list__item" href="#" title="Facebook">
+                  <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 2.43382H5.71472C5.44464 2.43382 5.14288 2.77931 5.14288 3.24147V4.84602H8V7.13269H5.14288V14H2.4456V7.13269H0V4.84602H2.4456V3.5C2.4456 1.56987 3.82336 0 5.71472 0H8V2.43382Z"/>
+                  </svg>
+                </a>
+              </li>
+      
+              <li>
+                <a class="social-list__item" href="#" title="Google Plus">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.6565 5.47432V3.08795H10.1722V5.47432H7.82873V6.98568H10.1722V9.37205H11.6565V6.98568H14V5.47432H11.6565ZM5.60364 2.72539C5.95611 3.98745 5.42382 5.30727 4.57594 5.55052C4.4786 5.57836 4.37752 5.59268 4.27566 5.59268C3.4987 5.59268 2.72878 4.7923 2.44381 3.68995C2.28461 3.07061 2.29742 2.52923 2.48021 2.00868C2.65988 1.49657 2.98235 1.1507 3.38856 1.03441C3.48621 1.00625 3.5876 0.991932 3.68915 0.991932C4.62718 0.991932 5.23009 1.38791 5.60364 2.72539ZM6.54167 10.6602C6.61026 11.7791 5.67051 12.6045 4.25941 12.7091C2.82612 12.8157 1.64624 12.1587 1.57749 11.0412C1.54422 10.5045 1.77622 9.97802 2.22993 9.55914C2.69035 9.13452 3.32232 8.87266 4.0099 8.82111C4.09099 8.81586 4.1716 8.81252 4.25175 8.81252C5.57833 8.81252 6.47668 9.60655 6.54167 10.6602ZM0.742736 3.49093C0.742736 4.67902 1.13238 5.53684 1.90074 6.04084C2.52958 6.45336 3.26014 6.51509 3.63947 6.51509C3.73149 6.51509 3.80539 6.51159 3.85695 6.50809C3.85695 6.50809 3.73649 7.30609 4.31768 8.09598L4.29144 8.09582C3.28451 8.09582 0 8.30995 0 11.0594C0 13.857 3.01657 13.999 3.62166 13.999C3.669 13.999 3.69681 13.9981 3.69681 13.9981C3.70353 13.9983 3.7468 14 3.82039 14C4.20879 14 5.21275 13.9502 6.145 13.4888C7.35425 12.891 7.96793 11.8513 7.96793 10.3985C7.96793 8.99452 7.03319 8.15898 6.35091 7.54823C5.93439 7.17627 5.57458 6.85491 5.57458 6.54245C5.57458 6.22411 5.83737 5.98484 6.16968 5.68177C6.70791 5.19161 7.21504 4.494 7.21504 3.1753C7.21504 2.016 7.0674 1.23789 6.15812 0.744227C6.25295 0.69475 6.58808 0.658636 6.754 0.635409C7.24676 0.566841 7.96793 0.489046 7.96793 0.0792274V0H4.37533C4.3394 0.000954545 0.742736 0.136659 0.742736 3.49093Z"/>
+                  </svg>
+                </a>
+              </li>
+      
+              <li>
+                <a class="social-list__item" href="#" title="Twitter">
+                  <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 1.42039C13.4846 1.66146 12.9313 1.8242 12.3501 1.89755C12.9435 1.52263 13.3988 0.928793 13.6133 0.221485C13.0582 0.568478 12.4434 0.820779 11.7894 0.956559C11.2653 0.367697 10.5187 0 9.69272 0C8.10646 0 6.82044 1.35636 6.82044 3.02921C6.82044 3.26675 6.8457 3.49786 6.89485 3.71951C4.50785 3.59336 2.39081 2.38722 0.974522 0.554355C0.727239 1.00198 0.585565 1.52231 0.585565 2.07747C0.585565 3.1284 1.09261 4.05542 1.86322 4.59887C1.3927 4.58314 0.949566 4.44704 0.562283 4.22009C0.561979 4.23261 0.561979 4.24529 0.561979 4.25813C0.561979 5.72587 1.55233 6.9503 2.86604 7.22844C2.62531 7.29778 2.37148 7.33501 2.10928 7.33501C1.92439 7.33501 1.74467 7.31591 1.56907 7.2806C1.93459 8.484 2.9957 9.35999 4.2522 9.38423C3.269 10.197 2.03091 10.6812 0.685087 10.6812C0.453326 10.6812 0.224761 10.6668 0 10.6385C1.27096 11.4983 2.78037 12 4.403 12C9.68587 12 12.5752 7.38364 12.5752 3.38038C12.5752 3.24941 12.5725 3.11861 12.5668 2.98844C13.1281 2.56152 13.6149 2.02803 14 1.42039Z"/>
+                  </svg>
+                </a>
+              </li>
+      
+              <li>
+                <a class="social-list__item" href="#" title="LinkedIn">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.0787113 4.23401H3.07192V14H0.0787113V4.23401ZM3.17008 1.51788C3.17008 2.35642 2.55967 3.03561 1.55525 3.03561C0.610402 3.03561 0 2.35642 0 1.51788C0 0.658996 0.630157 0 1.59476 0C2.55967 0 3.15063 0.658996 3.17008 1.51788Z"/>
+                    <path d="M4.86295 7.3448C4.86295 6.12668 4.82375 5.10829 4.78455 4.22936H7.38342L7.52171 5.58743H7.58066C7.97438 4.94815 8.93929 4.00944 10.5541 4.00944C12.5231 4.00944 14 5.34778 14 8.22341V13.9953H11.0068V8.58312C11.0068 7.32477 10.5736 6.46635 9.49043 6.46635C8.66349 6.46635 8.17162 7.04536 7.95493 7.60449C7.87591 7.80407 7.85615 8.08395 7.85615 8.36351V13.9953H4.86295V7.3448Z"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="person">
+            <img class="person__image" src="./assets/img/person-2.jpg" alt="Desmond Miles">
+
+            <article class="article person__article">
+              <h3 class="article__header person__name">Desmond Miles</h3>
+              <p class="article__description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+            </article>
+            
+            <ul class="social-list">
+              <li>
+                <a class="social-list__item" href="#" title="Facebook">
+                  <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 2.43382H5.71472C5.44464 2.43382 5.14288 2.77931 5.14288 3.24147V4.84602H8V7.13269H5.14288V14H2.4456V7.13269H0V4.84602H2.4456V3.5C2.4456 1.56987 3.82336 0 5.71472 0H8V2.43382Z"/>
+                  </svg>
+                </a>
+              </li>
+      
+              <li>
+                <a class="social-list__item" href="#" title="Google Plus">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.6565 5.47432V3.08795H10.1722V5.47432H7.82873V6.98568H10.1722V9.37205H11.6565V6.98568H14V5.47432H11.6565ZM5.60364 2.72539C5.95611 3.98745 5.42382 5.30727 4.57594 5.55052C4.4786 5.57836 4.37752 5.59268 4.27566 5.59268C3.4987 5.59268 2.72878 4.7923 2.44381 3.68995C2.28461 3.07061 2.29742 2.52923 2.48021 2.00868C2.65988 1.49657 2.98235 1.1507 3.38856 1.03441C3.48621 1.00625 3.5876 0.991932 3.68915 0.991932C4.62718 0.991932 5.23009 1.38791 5.60364 2.72539ZM6.54167 10.6602C6.61026 11.7791 5.67051 12.6045 4.25941 12.7091C2.82612 12.8157 1.64624 12.1587 1.57749 11.0412C1.54422 10.5045 1.77622 9.97802 2.22993 9.55914C2.69035 9.13452 3.32232 8.87266 4.0099 8.82111C4.09099 8.81586 4.1716 8.81252 4.25175 8.81252C5.57833 8.81252 6.47668 9.60655 6.54167 10.6602ZM0.742736 3.49093C0.742736 4.67902 1.13238 5.53684 1.90074 6.04084C2.52958 6.45336 3.26014 6.51509 3.63947 6.51509C3.73149 6.51509 3.80539 6.51159 3.85695 6.50809C3.85695 6.50809 3.73649 7.30609 4.31768 8.09598L4.29144 8.09582C3.28451 8.09582 0 8.30995 0 11.0594C0 13.857 3.01657 13.999 3.62166 13.999C3.669 13.999 3.69681 13.9981 3.69681 13.9981C3.70353 13.9983 3.7468 14 3.82039 14C4.20879 14 5.21275 13.9502 6.145 13.4888C7.35425 12.891 7.96793 11.8513 7.96793 10.3985C7.96793 8.99452 7.03319 8.15898 6.35091 7.54823C5.93439 7.17627 5.57458 6.85491 5.57458 6.54245C5.57458 6.22411 5.83737 5.98484 6.16968 5.68177C6.70791 5.19161 7.21504 4.494 7.21504 3.1753C7.21504 2.016 7.0674 1.23789 6.15812 0.744227C6.25295 0.69475 6.58808 0.658636 6.754 0.635409C7.24676 0.566841 7.96793 0.489046 7.96793 0.0792274V0H4.37533C4.3394 0.000954545 0.742736 0.136659 0.742736 3.49093Z"/>
+                  </svg>
+                </a>
+              </li>
+      
+              <li>
+                <a class="social-list__item" href="#" title="Twitter">
+                  <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 1.42039C13.4846 1.66146 12.9313 1.8242 12.3501 1.89755C12.9435 1.52263 13.3988 0.928793 13.6133 0.221485C13.0582 0.568478 12.4434 0.820779 11.7894 0.956559C11.2653 0.367697 10.5187 0 9.69272 0C8.10646 0 6.82044 1.35636 6.82044 3.02921C6.82044 3.26675 6.8457 3.49786 6.89485 3.71951C4.50785 3.59336 2.39081 2.38722 0.974522 0.554355C0.727239 1.00198 0.585565 1.52231 0.585565 2.07747C0.585565 3.1284 1.09261 4.05542 1.86322 4.59887C1.3927 4.58314 0.949566 4.44704 0.562283 4.22009C0.561979 4.23261 0.561979 4.24529 0.561979 4.25813C0.561979 5.72587 1.55233 6.9503 2.86604 7.22844C2.62531 7.29778 2.37148 7.33501 2.10928 7.33501C1.92439 7.33501 1.74467 7.31591 1.56907 7.2806C1.93459 8.484 2.9957 9.35999 4.2522 9.38423C3.269 10.197 2.03091 10.6812 0.685087 10.6812C0.453326 10.6812 0.224761 10.6668 0 10.6385C1.27096 11.4983 2.78037 12 4.403 12C9.68587 12 12.5752 7.38364 12.5752 3.38038C12.5752 3.24941 12.5725 3.11861 12.5668 2.98844C13.1281 2.56152 13.6149 2.02803 14 1.42039Z"/>
+                  </svg>
+                </a>
+              </li>
+      
+              <li>
+                <a class="social-list__item" href="#" title="LinkedIn">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.0787113 4.23401H3.07192V14H0.0787113V4.23401ZM3.17008 1.51788C3.17008 2.35642 2.55967 3.03561 1.55525 3.03561C0.610402 3.03561 0 2.35642 0 1.51788C0 0.658996 0.630157 0 1.59476 0C2.55967 0 3.15063 0.658996 3.17008 1.51788Z"/>
+                    <path d="M4.86295 7.3448C4.86295 6.12668 4.82375 5.10829 4.78455 4.22936H7.38342L7.52171 5.58743H7.58066C7.97438 4.94815 8.93929 4.00944 10.5541 4.00944C12.5231 4.00944 14 5.34778 14 8.22341V13.9953H11.0068V8.58312C11.0068 7.32477 10.5736 6.46635 9.49043 6.46635C8.66349 6.46635 8.17162 7.04536 7.95493 7.60449C7.87591 7.80407 7.85615 8.08395 7.85615 8.36351V13.9953H4.86295V7.3448Z"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="person">
+            <img class="person__image" src="./assets/img/person-3.jpg" alt="Desmond Miles">
+            
+            <article class="article person__article">
+              <h3 class="article__header person__name">Scolara Visari</h3>
+              <p class="article__description">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+            </article>
+      
+            <ul class="social-list">
+              <li>
+                <a class="social-list__item" href="#" title="Facebook">
+                  <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 2.43382H5.71472C5.44464 2.43382 5.14288 2.77931 5.14288 3.24147V4.84602H8V7.13269H5.14288V14H2.4456V7.13269H0V4.84602H2.4456V3.5C2.4456 1.56987 3.82336 0 5.71472 0H8V2.43382Z"/>
+                  </svg>
+                </a>
+              </li>
+      
+              <li>
+                <a class="social-list__item" href="#" title="Google Plus">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.6565 5.47432V3.08795H10.1722V5.47432H7.82873V6.98568H10.1722V9.37205H11.6565V6.98568H14V5.47432H11.6565ZM5.60364 2.72539C5.95611 3.98745 5.42382 5.30727 4.57594 5.55052C4.4786 5.57836 4.37752 5.59268 4.27566 5.59268C3.4987 5.59268 2.72878 4.7923 2.44381 3.68995C2.28461 3.07061 2.29742 2.52923 2.48021 2.00868C2.65988 1.49657 2.98235 1.1507 3.38856 1.03441C3.48621 1.00625 3.5876 0.991932 3.68915 0.991932C4.62718 0.991932 5.23009 1.38791 5.60364 2.72539ZM6.54167 10.6602C6.61026 11.7791 5.67051 12.6045 4.25941 12.7091C2.82612 12.8157 1.64624 12.1587 1.57749 11.0412C1.54422 10.5045 1.77622 9.97802 2.22993 9.55914C2.69035 9.13452 3.32232 8.87266 4.0099 8.82111C4.09099 8.81586 4.1716 8.81252 4.25175 8.81252C5.57833 8.81252 6.47668 9.60655 6.54167 10.6602ZM0.742736 3.49093C0.742736 4.67902 1.13238 5.53684 1.90074 6.04084C2.52958 6.45336 3.26014 6.51509 3.63947 6.51509C3.73149 6.51509 3.80539 6.51159 3.85695 6.50809C3.85695 6.50809 3.73649 7.30609 4.31768 8.09598L4.29144 8.09582C3.28451 8.09582 0 8.30995 0 11.0594C0 13.857 3.01657 13.999 3.62166 13.999C3.669 13.999 3.69681 13.9981 3.69681 13.9981C3.70353 13.9983 3.7468 14 3.82039 14C4.20879 14 5.21275 13.9502 6.145 13.4888C7.35425 12.891 7.96793 11.8513 7.96793 10.3985C7.96793 8.99452 7.03319 8.15898 6.35091 7.54823C5.93439 7.17627 5.57458 6.85491 5.57458 6.54245C5.57458 6.22411 5.83737 5.98484 6.16968 5.68177C6.70791 5.19161 7.21504 4.494 7.21504 3.1753C7.21504 2.016 7.0674 1.23789 6.15812 0.744227C6.25295 0.69475 6.58808 0.658636 6.754 0.635409C7.24676 0.566841 7.96793 0.489046 7.96793 0.0792274V0H4.37533C4.3394 0.000954545 0.742736 0.136659 0.742736 3.49093Z"/>
+                  </svg>
+                </a>
+              </li>
+      
+              <li>
+                <a class="social-list__item" href="#" title="Twitter">
+                  <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 1.42039C13.4846 1.66146 12.9313 1.8242 12.3501 1.89755C12.9435 1.52263 13.3988 0.928793 13.6133 0.221485C13.0582 0.568478 12.4434 0.820779 11.7894 0.956559C11.2653 0.367697 10.5187 0 9.69272 0C8.10646 0 6.82044 1.35636 6.82044 3.02921C6.82044 3.26675 6.8457 3.49786 6.89485 3.71951C4.50785 3.59336 2.39081 2.38722 0.974522 0.554355C0.727239 1.00198 0.585565 1.52231 0.585565 2.07747C0.585565 3.1284 1.09261 4.05542 1.86322 4.59887C1.3927 4.58314 0.949566 4.44704 0.562283 4.22009C0.561979 4.23261 0.561979 4.24529 0.561979 4.25813C0.561979 5.72587 1.55233 6.9503 2.86604 7.22844C2.62531 7.29778 2.37148 7.33501 2.10928 7.33501C1.92439 7.33501 1.74467 7.31591 1.56907 7.2806C1.93459 8.484 2.9957 9.35999 4.2522 9.38423C3.269 10.197 2.03091 10.6812 0.685087 10.6812C0.453326 10.6812 0.224761 10.6668 0 10.6385C1.27096 11.4983 2.78037 12 4.403 12C9.68587 12 12.5752 7.38364 12.5752 3.38038C12.5752 3.24941 12.5725 3.11861 12.5668 2.98844C13.1281 2.56152 13.6149 2.02803 14 1.42039Z"/>
+                  </svg>
+                </a>
+              </li>
+      
+              <li>
+                <a class="social-list__item" href="#" title="LinkedIn">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.0787113 4.23401H3.07192V14H0.0787113V4.23401ZM3.17008 1.51788C3.17008 2.35642 2.55967 3.03561 1.55525 3.03561C0.610402 3.03561 0 2.35642 0 1.51788C0 0.658996 0.630157 0 1.59476 0C2.55967 0 3.15063 0.658996 3.17008 1.51788Z"/>
+                    <path d="M4.86295 7.3448C4.86295 6.12668 4.82375 5.10829 4.78455 4.22936H7.38342L7.52171 5.58743H7.58066C7.97438 4.94815 8.93929 4.00944 10.5541 4.00944C12.5231 4.00944 14 5.34778 14 8.22341V13.9953H11.0068V8.58312C11.0068 7.32477 10.5736 6.46635 9.49043 6.46635C8.66349 6.46635 8.17162 7.04536 7.95493 7.60449C7.87591 7.80407 7.85615 8.08395 7.85615 8.36351V13.9953H4.86295V7.3448Z"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <div id="contact" class="section-start"></div>
+    <section class="section quote">
+      <div class="wrapper">
+        <div class="section__header section__header--light">
+          <h2 class="section__name">Get a Quote</h2>
+          <p class="section__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+        </div>
+        <div class="quote__content">
+          <form class="form" action="#" method="POST">
+            <label class="visually-hidden" for="input-name">Имя:</label>
+            <input id="input-name" class="input-text" type="text" name="name" placeholder="Name (Required)" required>
+            
+            <label class="visually-hidden" for="input-email">E-mail:</label>
+            <input id="input-email" class="input-text" type="email" name="email" placeholder="Email (Required)" required>
+            
+            <label class="visually-hidden" for="input-subject">Subject:</label>
+            <input id="input-subject" class="input-text" type="text" name="subject" placeholder="Subject">
+            
+            <label class="visually-hidden" for="input-details">Details:</label>
+            <textarea maxlength="10000" id="input-details" class="input-text input-text--textarea" name="details" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
+            <input class="form__submit button" type="submit" value="Send">
+          </form>
+          <div class="contact-information">
+            <article class="article article--light">
+              <h3 class="article__header">Contact Information</h3>
+              <p class="article__description">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
+            </article>
+
+            <div class="contact-block">
+              <span class="contact contact--location">Elm St. 14/05 Lost City </span>
+              <a href="tel:035283318635" class="contact contact--tel">03528 331 86 35</a>
+              <a href="mailto:info@singolo.com" class="contact contact--email">info@singolo.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrapper site-footer__wrapper">
+      <span class="site-footer__copyright">&copy; Copyright 2013</span>
+      <ul class="social-list social-list--footer">
+        <li>
+          <a class="social-list__item" href="#" title="Facebook">
+            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2.43382H5.71472C5.44464 2.43382 5.14288 2.77931 5.14288 3.24147V4.84602H8V7.13269H5.14288V14H2.4456V7.13269H0V4.84602H2.4456V3.5C2.4456 1.56987 3.82336 0 5.71472 0H8V2.43382Z"/>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a class="social-list__item" href="#" title="Google Plus">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.6565 5.47432V3.08795H10.1722V5.47432H7.82873V6.98568H10.1722V9.37205H11.6565V6.98568H14V5.47432H11.6565ZM5.60364 2.72539C5.95611 3.98745 5.42382 5.30727 4.57594 5.55052C4.4786 5.57836 4.37752 5.59268 4.27566 5.59268C3.4987 5.59268 2.72878 4.7923 2.44381 3.68995C2.28461 3.07061 2.29742 2.52923 2.48021 2.00868C2.65988 1.49657 2.98235 1.1507 3.38856 1.03441C3.48621 1.00625 3.5876 0.991932 3.68915 0.991932C4.62718 0.991932 5.23009 1.38791 5.60364 2.72539ZM6.54167 10.6602C6.61026 11.7791 5.67051 12.6045 4.25941 12.7091C2.82612 12.8157 1.64624 12.1587 1.57749 11.0412C1.54422 10.5045 1.77622 9.97802 2.22993 9.55914C2.69035 9.13452 3.32232 8.87266 4.0099 8.82111C4.09099 8.81586 4.1716 8.81252 4.25175 8.81252C5.57833 8.81252 6.47668 9.60655 6.54167 10.6602ZM0.742736 3.49093C0.742736 4.67902 1.13238 5.53684 1.90074 6.04084C2.52958 6.45336 3.26014 6.51509 3.63947 6.51509C3.73149 6.51509 3.80539 6.51159 3.85695 6.50809C3.85695 6.50809 3.73649 7.30609 4.31768 8.09598L4.29144 8.09582C3.28451 8.09582 0 8.30995 0 11.0594C0 13.857 3.01657 13.999 3.62166 13.999C3.669 13.999 3.69681 13.9981 3.69681 13.9981C3.70353 13.9983 3.7468 14 3.82039 14C4.20879 14 5.21275 13.9502 6.145 13.4888C7.35425 12.891 7.96793 11.8513 7.96793 10.3985C7.96793 8.99452 7.03319 8.15898 6.35091 7.54823C5.93439 7.17627 5.57458 6.85491 5.57458 6.54245C5.57458 6.22411 5.83737 5.98484 6.16968 5.68177C6.70791 5.19161 7.21504 4.494 7.21504 3.1753C7.21504 2.016 7.0674 1.23789 6.15812 0.744227C6.25295 0.69475 6.58808 0.658636 6.754 0.635409C7.24676 0.566841 7.96793 0.489046 7.96793 0.0792274V0H4.37533C4.3394 0.000954545 0.742736 0.136659 0.742736 3.49093Z"/>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a class="social-list__item" href="#" title="Twitter">
+            <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 1.42039C13.4846 1.66146 12.9313 1.8242 12.3501 1.89755C12.9435 1.52263 13.3988 0.928793 13.6133 0.221485C13.0582 0.568478 12.4434 0.820779 11.7894 0.956559C11.2653 0.367697 10.5187 0 9.69272 0C8.10646 0 6.82044 1.35636 6.82044 3.02921C6.82044 3.26675 6.8457 3.49786 6.89485 3.71951C4.50785 3.59336 2.39081 2.38722 0.974522 0.554355C0.727239 1.00198 0.585565 1.52231 0.585565 2.07747C0.585565 3.1284 1.09261 4.05542 1.86322 4.59887C1.3927 4.58314 0.949566 4.44704 0.562283 4.22009C0.561979 4.23261 0.561979 4.24529 0.561979 4.25813C0.561979 5.72587 1.55233 6.9503 2.86604 7.22844C2.62531 7.29778 2.37148 7.33501 2.10928 7.33501C1.92439 7.33501 1.74467 7.31591 1.56907 7.2806C1.93459 8.484 2.9957 9.35999 4.2522 9.38423C3.269 10.197 2.03091 10.6812 0.685087 10.6812C0.453326 10.6812 0.224761 10.6668 0 10.6385C1.27096 11.4983 2.78037 12 4.403 12C9.68587 12 12.5752 7.38364 12.5752 3.38038C12.5752 3.24941 12.5725 3.11861 12.5668 2.98844C13.1281 2.56152 13.6149 2.02803 14 1.42039Z"/>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a class="social-list__item" href="#" title="LinkedIn">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.0787113 4.23401H3.07192V14H0.0787113V4.23401ZM3.17008 1.51788C3.17008 2.35642 2.55967 3.03561 1.55525 3.03561C0.610402 3.03561 0 2.35642 0 1.51788C0 0.658996 0.630157 0 1.59476 0C2.55967 0 3.15063 0.658996 3.17008 1.51788Z"/>
+              <path d="M4.86295 7.3448C4.86295 6.12668 4.82375 5.10829 4.78455 4.22936H7.38342L7.52171 5.58743H7.58066C7.97438 4.94815 8.93929 4.00944 10.5541 4.00944C12.5231 4.00944 14 5.34778 14 8.22341V13.9953H11.0068V8.58312C11.0068 7.32477 10.5736 6.46635 9.49043 6.46635C8.66349 6.46635 8.17162 7.04536 7.95493 7.60449C7.87591 7.80407 7.85615 8.08395 7.85615 8.36351V13.9953H4.86295V7.3448Z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="modal">
+    <div class="modal__shadow"></div>
+    <div class="modal__window">
+      <h2 class="modal__header"></h2>
+      <h3 class="modal__subject"></h3>
+      <p class="modal__description"></p>
+      <button class="modal__close button">Ok</button>
+    </div>
+  </div>
 </body>
 </html>
